@@ -138,8 +138,3 @@ pour agencer correctement les bons éléments*/
 }
 
 /*Partie présentation du staff avec les textes*/
-
-/*
-    Pour mettre les traits de séparation en width 100% malgré que tout soit en width 80%:
-        - Mettre le #allPage à 100%
-        - Définir tous les width 80% et les implémenter dans 
