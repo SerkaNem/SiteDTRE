@@ -1,0 +1,99 @@
+/* Déclaration des propriétés global */
+
+body {
+	background: #9ED2F2;
+}
+
+#allPage {
+	width: 90%;
+	margin: auto;
+}
+
+/* Fin des propriétés globales */
+
+/* Déclaration des propriétés du header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #111F86;
+}
+
+header nav a {
+    color: #111F86;   
+}
+
+#separePageAndHeader {
+    margin-bottom: 100px;
+}
+
+#titre_principal {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img {
+    width: 60px;
+    height: 60px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h4 {
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+/* Fin des propriétés du header */
+
+/* Déclaration des propriétés du footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #111F86;
+}
+
+footer img {
+    width: 80px;
+    height: 80px;
+}
+
+#separePageAndFooter {
+    margin-top: 100px;
+}
+

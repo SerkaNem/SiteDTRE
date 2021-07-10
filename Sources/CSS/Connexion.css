@@ -66,22 +66,17 @@ nav ul {
     display: flex;
 }
 
-nav li {
-    margin-right: 15px;
-}
-
-nav a {
-    font-size: 1.3em;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
-
 nav a:hover {
     color: #760001;
     border-bottom: 3px solid #760001;
 }
 
+nav li {
+    margin-right: 15px;
+}
+
 /* Fin des propriétés du header */
+
 
 
 /* Propriété du formulaire */
@@ -91,7 +86,7 @@ nav a:hover {
     flex-direction: column;
     background: #CB2F2F;
     border-radius: 100px;
-    width: 75%;
+    width: 65%;
     margin: auto;
 }
 
@@ -138,6 +133,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    color: #111F86;
 }
 
 footer img {
@@ -147,8 +143,4 @@ footer img {
 
 #separePageAndFooter {
     margin-top: 100px;
-}
-
-footer {
-    color: #111F86;
 }

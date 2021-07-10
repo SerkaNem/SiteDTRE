@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>DTRE - Inscription</title>
-		<link rel="stylesheet" type="text/css" href="../../CSS/Inscription.css" />
+		<link rel="stylesheet" type="text/css" href="../CSS/Inscription.css" />
 	</head>
 
 	<body>
@@ -27,8 +27,98 @@
 					</ul>
 				</nav>
 			</header>
+
 			<hr color = "red" id="separePageAndHeader" />
-			
+
+			<div id="page">
+				<div id="formulaireInscriptionDiv">
+					<form id="formulaireInscription" method="post" action="#">
+						<p class="DivForm" id="formInscriptionTitle">Inscription</p>
+
+						<div id="email" class="DivForm">
+							<label for="email" class="FormComponent">Adresse email : </label><br />
+							<input type="email" name="email" autofocus required placeholder="Email" class="FormComponent"/>
+						</div>
+
+						<div id="pseudo" class="DivForm">
+							<label for="pseudo" class="FormComponent">Pseudonyme : </label><br />
+							<input type="pseudo" class="FormComponent" name="pseudo" required placeholder="Pseudonyme" />
+						</div>
+
+						<div id="pwd" class="DivForm">
+							<label for="pwd" class="FormComponent">Mot de passe : </label><br />
+							<input type="password" class="FormComponent" name="pwd" required placeholder="Mot de passe">
+						</div>
+
+						<div id="statut" class="DivForm">
+							<label for="statut" class="FormComponent">Vous êtes : </label>
+							<select name="statut" class="FormComponent" id="statut" required>
+								<option value="Etudiant">Etudiant</option>
+								<option value="Professeur">Professeur</option>
+								<option value="Autre">Autre</option>
+							</select>
+						</div>
+
+						<div id="teachingLevel" class="DivForm">
+							<label for="teachingLevel" class="FormComponent">Vous enseignez en : </label>
+							<select name="teachingLevel" class="FormComponent" id="teachingLevel" required>
+								<option value="Collège">Collège</option>
+								<option value="Lycée">Lycée</option>
+								<option value="Ecole d'ingénieur">Ecole d'ingénieur</option>
+								<option value="BTS">BTS</option>
+								<option value="Faculté">Faculté</option>
+								<option value="Autres">Autres</option>
+								<option value="None">Pas prof</option>
+							</select>
+						</div>
+						
+						<div id="studentLevel" class="DivForm">
+							<label for="studentLevel" class="FormComponent">Vous étudiez en : </label>
+							<select name = "studentLevel" id="studentLevel" class="FormComponent" required>
+								<option value="Collégien">Collégien</option>
+								<option value="secondeG">Seconde Générale</option>
+								<option value="premiereS">1ère Spécialité Scientifique</option>
+								<option value="terminaleS">Terminale Spécialité Scientifique</option>
+								<option value="L1">1ère année de License</option>
+								<option value="L2">2ème année de License</option>
+								<option value="L3">3ème année de License</option>
+								<option value="M1">1ère année de Master</option>
+								<option value="M2">2ème année de Master</option>
+								<option value="Autres">Autres</option>
+								<option value="None">Pas étudiant</option>
+							</select>
+						</div>
+
+						<div id="esiearque" class="DivForm">
+							<label for="esiearque" class="FormComponent">Esiearque ? </label>
+							<select name="esiearque" id="statut" class="FormComponent" required>
+								<option value="Etudiant">Etudiant</option>
+								<option value="Alumni">Alumni</option>
+								<option value="Non">Non</option>
+							</select>
+						</div>
+
+						<div class="DivForm"><button class="FormComponent" type="submit">S'inscire !</button></div>
+
+						<p class="DivForm" class="FormComponent" id="AccountYet"><a href="Connexion.html">
+							Vous avez déjà un compte ? Cliquez ici pour vous connecter !
+						</a></p>
+					</form>
+				</div>
+			</div>
+
+			<hr color="red" id="separePageAndFooter" />
+
+			<footer>
+				<a href="Accueil.html"><img src="../../image/AncienLogo.png" alt="DTRE" /></a>
+				<p>Nous contacter :</p>
+				<p>Adresse mail : <br />dtre@et.esiea.fr</p>
+				<a href="#"><img src="../../image/Logo YouTube.jpg" alt="Chaîne YouTube" /></a>
+				<a href="https://www.instagram.com/dtre_esiea/"><img src="../../image/Logo Instagram.png" alt="Instagram" /></a>
+				<a href="https://discord.gg/aQpkhjkGeV"><img src="../../image/Logo Discord.png" alt="Discord"></a>
+				<a href="https://twitter.com/assodtre"><img src="../../image/Logo Twitter.png" alt="Twitter" /></a>
+				<a href="Accueil.html"><img src="../../image/AncienLogo.png" alt="DTRE" /></a>
+			</footer>
 		</div>
 	</body>
 </html>
