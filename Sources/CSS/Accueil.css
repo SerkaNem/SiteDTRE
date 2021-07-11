@@ -1,16 +1,3 @@
-/* Déclaration des propriétés global */
-
-body {
-	background: #9ED2F2;
-}
-
-#allPage {
-	width: 90%;
-	margin: auto;
-}
-
-/* Fin des propriétés globales */
-
 /* Déclaration des propriétés du header */
 
 header {
@@ -18,14 +5,13 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     color: #111F86;
+    background: white;
+    width: 80%;
+    margin: auto;
 }
 
 header nav a {
     color: #111F86;   
-}
-
-#separePageAndHeader {
-    margin-bottom: 100px;
 }
 
 #titre_principal {
@@ -85,7 +71,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: #111F86;
+    color: white;
+    background: #1025BC;
+    padding: 25px 0 25px 0;
 }
 
 footer img {
@@ -93,7 +81,149 @@ footer img {
     height: 80px;
 }
 
-#separePageAndFooter {
+footer a {
+    color: white;
+}
+
+/* Définition des propriétés définissant la page */
+
+/* Propriété pour l'intro */
+
+#intro {
+	display: flex;
+	flex-direction: column;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #1025BC;
+	color: white;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+#intro img {
+	width: 500px;
+	height: 250px;
+	margin-top: 25px;
+}
+
+/* Fin des propriétés de l'intro */
+
+/* Proriétés Qui Sommes-Nous ?*/
+
+#quiSommesNous {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	width: 90%;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
+#titreQuiSommesNous {
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+#Présentation {
+	margin-right: 50px;
+}
+
+#quiSommesNous img {
+	width: 500px;
+	height: 350px;
+	margin-left: 100px;
+}
+
+/* Fin des propriétés Qui Sommes-Nous ? */
+
+/* Début des propriétés Equipe */
+
+#Equipe {
+    display: flex;
+    flex-direction: column;
+    background: #1025BC;
+}
+
+.Ligne {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+.texteEquipe {
+    color: white;
+    text-transform: uppercase;
+}
+
+.lienVersEquipe {
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    margin: 100px 50px 35px 0;
+    font-size: 1.1em;
+}
+
+.photoStaff {
+    height: 200px;
+}
+
+#Président, #Responsable_Sponsoring, .memberStaff:nth-child(2), .memberStaff:nth-child(3) {
+    margin-right: 150px;
+}
+
+#titleEquipe {
+    font-size: 3em;
+    font-weight: normal;
+    text-decoration: underline;
+    margin-top: 175px;
+    margin-bottom: 125px;
+}
+
+#ligne3 {
+    margin-bottom: 100px;
+}
+
+/* Fin des propriétés Equipe */
+
+/* Début des propriétés Projets */
+
+#Projets {
+    display: flex;
+    flex-direction: column;
+}
+
+#ProjetDiv {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#ProjetTitle {
+    font-size: 3em;
+    text-decoration: underline;
+    text-transform: uppercase;
     margin-top: 100px;
 }
 
+.photoProjet {
+    height: 400px;
+}
+
+#listeProjet {
+    list-style-type: none;
+    margin: 0 100px 0 100px;
+}
+
+#LienVersProjet {
+    text-align: right;
+    font-size: 1.1em;
+    margin:  0 35px 50px 0;
+}
+
+#LienVersProjet a {
+    color: black;
+    text-decoration: none;
+}
