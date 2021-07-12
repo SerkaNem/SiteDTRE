@@ -1,14 +1,3 @@
-/* Définition des propriétés globales */
-
-body {
-	background: #9ED2F2;
-}
-
-#allPage {
-    width: 90%;
-    margin: auto;
-} 
-
 /* Définition des propriétés header */ 
 
 header {
@@ -16,14 +5,13 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     color: #111F86;
+    background: white;
+    width: 80%;
+    margin: auto;
 }
 
 header nav a {
     color: #111F86;   
-}
-
-#separePageAndHeader {
-    margin-bottom: 25px;
 }
 
 #titre_principal {
@@ -82,6 +70,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     color: #111F86;
+    margin-top: 25px;
 }
 
 footer img {
@@ -93,12 +82,14 @@ footer img {
     margin-top: 25px;
 }
 
-/* Reste de la page */
+/* Propriété pour le choix du type de projet */
 
 #ChoixTypeProjet {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+    padding: 50px 0 50px 0;
+    background: #1025BC;
 }
 
 #ChoixTypeProjet img {
@@ -106,8 +97,8 @@ footer img {
 	height:	150px;
 }
 
-#ProjetsAsso {
-	
+#ChoixTypeProjet h3 {
+    color: white;
 }
 
 a {
@@ -116,3 +107,47 @@ a {
 	text-decoration: none;
 	font-size: 1.2em;
 }
+
+/* Définition des propriétés pour les listes de projet */
+
+.ProjetDeux {
+    background: #1025BC;
+}
+
+.ProjetDeux .description, .ProjetDeux .titre {
+    color: white;
+}
+
+.alignement:first-child {
+    margin-top:  50px;
+}
+
+.alignement {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.alignement img {
+    width: 300px;
+    height: 300px;
+    margin-right: 35px;
+}
+
+.titre {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.titreAndDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.ProjetUn, .ProjetDeux {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Fin de la définition des listes */

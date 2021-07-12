@@ -28,7 +28,6 @@
 					</ul>
 				</nav>
 			</header>
-			<hr color = "red" id="separePageAndHeader" />
 
 			<div id="Page">
 				<div id="ChoixTypeProjet">
@@ -41,15 +40,43 @@
 						<h3>Accéder à notre archivage des PST</h3></a>
 					</div>
 				</div>
-				
-				<hr color = "red">
 
-				<div id="ProjetsAsso">
-					
+				<div id="listeProjet">
+					<script type="text/javascript">
+						var myArray = [
+						'../../image/Dos.jpg', 
+						'../../image/Logo YouTube.jpg', 
+						'../../image/Projet2.jpg', 
+						'../../image/Projet.jpg'];
+
+						var title = ['Dos', 'Face', 'JPO', 'JPO 2'];
+						var numberProjet = ['ProjetUn', 'ProjetDeux'];
+						var texte = [
+						`Ce texte a été fait par moi.`, 
+						`Ce texte a été fait par Esteban.`,
+						`Ce texte a été fait par un membre de la DTRE.`, 
+						`Ce texte a été fait par un être humain.`];
+
+						for (var i = 0; i < myArray.length; i++) {
+							projetClass = i % 2;
+							let elt = document.getElementById('listeProjet');
+							const newElt = document.createElement('div');
+							elt.appendChild(newElt);
+							newElt.innerHTML = `
+							<div class="${numberProjet[projetClass]}">
+								<div class="alignement">
+									<img src="${myArray[i]}" alt="Dos" />
+									<div class="titreAndDescription">
+										<h1 class="titre">${title[i]}</h1>
+										<p class="description">${texte[i]}</p>	
+									</div>
+								</div>
+							</div>
+							`;
+						}
+					</script>
 				</div>
 			</div>
-
-			<hr color = "red" id="separePageAndFooter" />
 
 			<footer>
 				<a href="Accueil.html"><img src="../../image/AncienLogo.png" alt="DTRE" /></a>
