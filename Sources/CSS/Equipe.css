@@ -1,38 +1,20 @@
-/* Toute la page */
-
 body {
-	background: #84C6F1;
+    margin: 15px 0 5px 0;
 }
 
-#allPage {
-    width: 90%;
+/* Déclaration des propriétés du header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #111F86;
+    width: 80%;
     margin: auto;
 }
 
-p, h1, h2, h3, h4, h5, h6, a {
-	color:  #113952;
-}
-
-/* Fin de la définition de global */
-
-
-
-/* Header de toutes les pages */
-
-header {
-	display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-#separePageAndHeader {
-	margin-bottom: 50px;
-    width: 100%;
-}
-
-#titre_principal {
-    display: flex;
-    flex-direction: column;
+header nav a {
+    color: #111F86;   
 }
 
 #logo {
@@ -53,16 +35,14 @@ header h1 {
 }
 
 header h4 {
-    font-family: Dayrom, serif;
     font-size: 1.1em;
     margin-top: 0px;
     font-weight: normal;
 }
 
 nav a {
-	text-transform: uppercase;
-	font-size: 1.5em;
-    padding-bottom: 3px;
+    text-transform: uppercase;
+    font-size: 1.5em;
     text-decoration: none;
 }
 
@@ -71,25 +51,48 @@ nav ul {
     display: flex;
 }
 
-nav li {
-    margin-right: 15px;
-}
-
-nav a {
-    font-size: 1.3em;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
-
 nav a:hover {
     color: #760001;
     border-bottom: 3px solid #760001;
 }
 
-/* Fin de l'header */
+nav li {
+    margin-right: 15px;
+}
 
+/* Fin des propriétés du header */
 
+h2 {
+    background: #1025BC;
+    color: white;
+    padding: 150px 0;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+.memberStaff {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0 100px 0;
+    width: 80%;
+    margin: auto;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.memberStaff:nth-child(2n) {
+    background: #1025BC;
+    color: white;
+}
+
+.memberStaff img {
+    width: 250px;
+    height: 250px;
+    margin-right: 50px;
+}
 
 /* Footer */
 
@@ -97,6 +100,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 25px 0 25px 0;
 }
 
 footer img {
@@ -104,41 +108,6 @@ footer img {
     height: 80px;
 }
 
-/* Partie présentation du staff avec la mise en page Flexbox 
-pour agencer correctement les bons éléments*/
-
-#listeStaff {
-	display: flex;
-	flex-direction: column;
-}
-
-.memberStaff {
-	margin-top: 20px;
-	padding-bottom: 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}   
-
-.photoStaff {
-	width: 700px;
-	height: 300px;
-    margin-right: 30px;
-    padding-left: 30px;
-}
-
-.presentationStaff {
-    padding-right: 30px;
-}
-
-.memberStaff:not(:last-child) {
-    border-bottom: 5px solid black;
-}
-
-/*Partie présentation du staff avec les textes*/
-
-#compositionStaff {
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-size: 2.5em;
+footer a {
+    color: black;
 }

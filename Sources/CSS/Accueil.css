@@ -10,13 +10,13 @@ header {
     margin: auto;
 }
 
-header nav a {
-    color: #111F86;   
+
+body {
+    margin: 15px 0 0 0;
 }
 
-#titre_principal {
-    display: flex;
-    flex-direction: column;
+header nav a {
+    color: #111F86;   
 }
 
 #logo {

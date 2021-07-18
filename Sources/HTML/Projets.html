@@ -43,11 +43,13 @@
 
 				<div id="listeProjet">
 					<script type="text/javascript">
-						var myArray = [
+						var i;
+						var photo	 = [
 						'../../image/Evénements/Dos.jpg', 
 						'../../image/Réseaux Sociaux/Logo YouTube.jpg', 
 						'../../image/Projet/Projet2.jpg', 
-						'../../image/Projet/Projet.jpg'];
+						'../../image/Projet/Projet.jpg',
+						'../../image/Logo/Logo.png'];
 
 						var title = ['Dos', 'Face', 'JPO', 'JPO 2'];
 						var numberProjet = ['ProjetUn', 'ProjetDeux'];
@@ -55,9 +57,10 @@
 						`Ce texte a été fait par moi.`, 
 						`Ce texte a été fait par Esteban.`,
 						`Ce texte a été fait par un membre de la DTRE.`, 
-						`Ce texte a été fait par un être humain.`];
+						`Ce texte a été fait par un être humain.`, 
+						'Voici le logo de l\'asso'];
 
-						for (var i = 0; i < myArray.length; i++) {
+						for (i = 0; i < photo.length; i++) {
 							projetClass = i % 2;
 							let elt = document.getElementById('listeProjet');
 							const newElt = document.createElement('div');
@@ -65,9 +68,9 @@
 							newElt.innerHTML = `
 							<div class="${numberProjet[projetClass]}">
 								<div class="alignement">
-									<img src="${myArray[i]}" alt="${title[i]}" />
+									<img src="${photo[i]}" alt="${title[i]}" />
 									<div class="titreAndDescription">
-										<h1 class="titre">${title[i]}</h1>
+										<h2 class="titre">${title[i]}</h2>
 										<p class="description">${texte[i]}</p>	
 									</div>
 								</div>
