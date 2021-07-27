@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 /* Déclaration des propriétés du header */
 
 header {
@@ -7,12 +11,7 @@ header {
     color: #111F86;
     background: white;
     width: 80%;
-    margin: auto;
-}
-
-
-body {
-    margin: 15px 0 0 0;
+    margin: 15px auto 0 auto;   
 }
 
 header nav a {
@@ -63,6 +62,34 @@ nav li {
     margin-right: 15px;
 }
 
+@media only screen and (max-width: 1500px) {
+    header {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    header {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    header li {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        margin: 15px 0 0;
+        padding: 0;
+    }
+
+    header li {
+        font-size: 0.75em;
+    }
+}
+
 /* Fin des propriétés du header */
 
 /* Déclaration des propriétés du footer */
@@ -110,22 +137,17 @@ footer a {
 
 /* Proriétés Qui Sommes-Nous ?*/
 
-#quiSommesNous {
-	display: flex;
-	flex-direction: row;
-	margin: auto;
-	width: 90%;
-	padding-bottom: 100px;
-	padding-top: 100px;
-}
-
 #titreQuiSommesNous {
 	text-transform: uppercase;
 	text-decoration: underline;
 }
 
+#quiSommesNous > div {
+    margin: auto;
+}
+
 #Présentation {
-	margin-right: 50px;
+    margin: auto 50px auto 0;
 }
 
 #quiSommesNous img {
@@ -134,54 +156,82 @@ footer a {
 	margin-left: 100px;
 }
 
+@media only screen and (max-width: 1000px) {
+    #quiSommesNous {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    #quiSommesNous #Présentation {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #quiSommesNous {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 90%;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+}
+
 /* Fin des propriétés Qui Sommes-Nous ? */
 
 /* Début des propriétés Equipe */
 
-#Equipe {
-    display: flex;
-    flex-direction: column;
-    background: #1025BC;
-}
+@media only screen and (min-width: 1275px) {
+    #Equipe {
+        display: flex;
+        flex-direction: column;
+        background: #1025BC;
+    }
 
-.Ligne {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    margin-bottom: 75px;
-}
+    .Ligne {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-bottom: 75px;
+    }
 
-.texteEquipe {
-    color: white;
-    text-transform: uppercase;
-}
+    .texteEquipe {
+        color: white;
+        text-transform: uppercase;
+    }
 
-.lienVersEquipe {
-    text-decoration: none;
-    color: white;
-    text-align: right;
-    margin: 100px 50px 35px 0;
-    font-size: 1.1em;
-}
+    .lienVersEquipe {
+        text-decoration: none;
+        color: white;
+        text-align: right;
+        margin: 100px 50px 35px 0;
+        font-size: 1.1em;
+    }
 
-.photoStaff {
-    height: 200px;
-}
+    .photoStaff {
+        height: 200px;
+    }
 
-#Président, #Responsable_Sponsoring, .memberStaff:nth-child(2), .memberStaff:nth-child(3) {
-    margin-right: 150px;
-}
+    #Président, #Responsable_Sponsoring, .memberStaff:nth-child(2), .memberStaff:nth-child(3) {
+        margin-right: 150px;
+    }
 
-#titleEquipe {
-    font-size: 3em;
-    font-weight: normal;
-    text-decoration: underline;
-    margin-top: 175px;
-    margin-bottom: 125px;
-}
+    #titleEquipe {
+        font-size: 3em;
+        font-weight: normal;
+        text-decoration: underline;
+        margin-top: 175px;
+        margin-bottom: 125px;
+    }
 
-#ligne3 {
-    margin-bottom: 100px;
+    #ligne3 {
+        margin-bottom: 100px;
+    }
 }
 
 /* Fin des propriétés Equipe */
@@ -196,8 +246,6 @@ footer a {
 #ProjetDiv {
     display: flex;
     flex-direction: row;
-    margin: auto;
-    align-items: center;
     margin-bottom: 100px;
 }
 
@@ -215,6 +263,7 @@ footer a {
 #listeProjet {
     list-style-type: none;
     margin: 0 60px 0 60px;
+    margin: auto;
 }
 
 #listeProjet li {
@@ -230,4 +279,9 @@ footer a {
 #LienVersProjet a {
     color: black;
     text-decoration: none;
+}
+
+#Projets {
+    width: 90%;
+    margin: auto;
 }
