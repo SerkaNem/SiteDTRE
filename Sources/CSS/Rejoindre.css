@@ -1,34 +1,17 @@
-/* Définition des propriétés globales à la page */
-
-#allPage {
-	width: 90%;
-	margin: auto;
-}
-
 body {
-	background: #9ED2F2;
+    margin: 15px 0 0;
 }
-
-/* Définition des propriétés du header */
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	color: #111F86;
-}
-
-header nav a {
-    color: #111F86;   
-}
-
-#separePageAndHeader {
-    margin-bottom: 100px;
-}
-
-#titre_principal {
+    margin: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-end;
+    background: white;
+    width: 80%;
+    color: #111F86;
+    justify-content: space-between;
+    margin: auto;
 }
 
 #logo {
@@ -42,50 +25,65 @@ header nav a {
     height: 60px;
 }
 
+header nav ul { 
+    display: flex;
+    flex-direction: row;
+}
+
+header nav li {
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+
+header h4 {
+    margin-top: 0;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
 header h1 {
     font-size: 3em;
     font-weight: normal;
     margin: 0 0 0 10px;
 }
 
-header h4 {
-    font-size: 1.1em;
-    margin-top: 0px;
-    font-weight: normal;
-}
-
-nav a {
+header nav a {
+    text-decoration: none;
+    color: #111F86;   
     text-transform: uppercase;
     font-size: 1.5em;
-    padding-bottom: 3px;
-    text-decoration: none;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav a:hover {
+header nav a:hover {
     color: #760001;
     border-bottom: 3px solid #760001;
 }
 
-nav li {
-    margin-right: 15px;
+
+#intro {
+    background: #1025BC;
+    color: white;
+    padding: 100px 0 150px;
+    font-size: 1.8em;
 }
 
-/* Fin de la déclaration des propriétés du header */
+#intro a {
+    color:  white;
+    text-transform: uppercase;
+} 
 
-
-
-/* Déclaration des propriétés du footer */
+#intro p {
+    text-align: center;
+}
 
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: #111F86;
+    color: white;
+    background: #1025BC;
+    padding: 25px 0 25px 0;
 }
 
 footer img {
@@ -93,49 +91,31 @@ footer img {
     height: 80px;
 }
 
-#separePageAndFooter {
-    margin-top: 100px;
-}
-
-/* Déclaration des propriétés pour le formulaire */
-
-#formulaireInscription {	
-	display: flex;
-	flex-direction: column;
-	background: #CB2F2F;
-	border-radius: 100px;
-	width: 65%;
-	margin: auto;
+footer a {
+    color: white;
 }
 
 form {
-	display: flex;
-	flex-direction: column;
+    text-align: center;
 }
 
-input, select, button {
-	margin-bottom: 25px;
+#form {
+    padding: 50px 0;
+    margin: 10% 30%;
+    background: #102593;
+    opacity: 0.9;
+    color: white;
+    border-radius: 50px;
 }
 
-.DivForm {
-	margin: auto;
-	color: #0E1E90;
+input, select {
+    margin-bottom: 30px;
 }
 
-#formInscriptionTitle {
+h2.formComponent {
+    font-weight: 1.1px;
+    margin-bottom: 50px;
     text-transform: uppercase;
-    font-size: 2.5em;
     text-decoration: underline;
-    margin-bottom: 35px;
-    margin-top: 35px;
-}
-
-form p a {
-	text-decoration: none;
-	color: #0E1E90;
-	font-size: 1.3em;
-}
-
-label {
-    font-size: 1.5em;
+    font-size: 2em;
 }

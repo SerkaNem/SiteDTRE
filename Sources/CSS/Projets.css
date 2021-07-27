@@ -1,5 +1,9 @@
 /* Définition des propriétés header */ 
 
+body {
+    margin: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -104,7 +108,6 @@ footer img {
 a {
 	color: #111F86;
 	text-transform: uppercase;
-	text-decoration: none;
 	font-size: 1.2em;
 }
 
@@ -148,6 +151,14 @@ a {
 .ProjetUn, .ProjetDeux {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+#toUnderline {
+    text-decoration: underline;
+}
+
+footer a {
+    text-decoration: underline;
 }
 
 /* Fin de la définition des listes */
