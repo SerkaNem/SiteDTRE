@@ -8,43 +8,25 @@
 </head>
 <body>
 	<div id="allPage">
-		<header>
-			<div id="titrePrincipal">
-					<div id="logo">
-						<img src="../../image/Logo/Logo.png" alt="Logo DTRE" id="logoDTRE" />
-						<h1>DTRE</h1>
-					</div>
-					<h4>Département Technique & Robotique ESIEA</h4>
-				</div>
-				
-				<nav>
-					<ul>
-						<li><a href="Accueil.html">Accueil</a></li>
-						<li><a href="Rejoindre.html">Nous rejoindre</a></li>
-						<li><a href="Equipe.html">L'équipe</a></li>
-						<li><a href="Projets.html">Projets</a></li>
-						<li><a href="Partenaires.html">Partenaires</a></li>
-					</ul>
-				</nav>
-		</header>
+		<header id="header"></header>
 	</div>
 
 	<div id="page">
 		<div id="intro">
 			<p>Bonjour à toi ! Tu serais intéressé par notre association et aurait envie de la rejoindre ?<br />Tu tombes bien !</p>
 			<p id="pAvantage">Tout d'abord, voici les avantages que tu obtiendras en cotisant à notre associations :<br><br>Tu seras gentil.<br></p>
-			<p>Si tu veux seulement cotiser, alors il te suffira de ramener <a href="">cette fiche</a> accompagnée de 5€ à notre association.<br />
+			<p>Si tu veux seulement cotiser, alors il te suffira de ramener <a download="../../Fiche de cotisation.pdf" href="../../Fiche de cotisation.pdf" title="Fiche de cotisation" target="blank" />cette fiche</a> accompagnée de 5€ à notre association.<br />
 			Si tu veux postuler pour rejoindre notre staff, il faudra que tu remplisses le formulaire suivant et que tu sois cotisant.</p>
 		</div>
 
 		<div id="form">
 			<form method="post">
 				<h2 class="formComponent">Rejoindre le staff</h2>
-				<label for="mail" class="formComponent">Merci de rentrer votre adresse mail de l'ESIEA</label><br />
+				<label for="mail" class="formComponent">Adresse mail de l'ESIEA</label><br />
 				<input type="email" name="mail" id="mail" class="formComponent"><br />
-				<label for="nomPrenom" class="formComponent">Merci de rentrer votre prénom et votre nom</label><br />
+				<label for="nomPrenom" class="formComponent">Prénom et nom</label><br />
 				<input type="text" name="nomPrenom" id="nomPrenom" class="formComponent"><br />
-				<label class="formComponent">Merci de renseigner votre promotion</label><br />
+				<label class="formComponent">Promotion</label><br />
 				<select id="promo" name="promo" class="formComponent">
 					<option>1A</option>
 					<option>2A</option>
@@ -52,20 +34,14 @@
 					<option>4A</option>
 					<option>5A</option>
 				</select><br />
-				<textarea class="formComponent" cols="40" rows="15" placeholder="Motivez votre candidature"></textarea>
+				<textarea class="formComponent" cols="40" rows="15" placeholder="Motivez votre candidature"></textarea><br />
+				<button type="submit">Envoyez votre candidature</button>
 			</form>
 		</div>
 
-		<footer>
-			<a href="Accueil.html"><img src="../../image/Logo/Logo.png" alt="DTRE" /></a>
-			<p>Nous contacter :</p>
-			<p>Adresse mail : <br />dtre@et.esiea.fr</p>
-			<a href="#"><img src="../../image/Réseaux Sociaux/Logo YouTube.jpg" alt="Chaîne YouTube" /></a>
-			<a href="https://www.instagram.com/dtre_esiea/"><img src="../../image/Réseaux Sociaux/Logo Instagram.png" alt="Instagram" /></a>
-			<a href="https://discord.gg/aQpkhjkGeV"><img src="../../image/Réseaux Sociaux/Logo Discord.png" alt="Discord"></a>
-			<a href="https://twitter.com/assodtre"><img src="../../image/Réseaux Sociaux/Logo Twitter.png" alt="Twitter" /></a>
-			<a href="Accueil.html"><img src="../../image/Logo/Logo.png" alt="DTRE" /></a>
-		</footer>
+		<footer></footer>
 	</div>
+	<script src="../JavaScript/headerScrypt.js"></script>
+	<script src="../JavaScript/FooterScrypt.js"></script>
 </body>
 </html>

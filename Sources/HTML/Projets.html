@@ -9,25 +9,7 @@
 
 	<body>
 		<div id="allPage">
-			<header>
-				<div id="titrePrincipal">
-					<div id="logo">
-						<img src="../../image/Logo/Logo.png" alt="Logo DTRE" id="logoDTRE" />
-						<h1>DTRE</h1>
-					</div>
-					<h4>Département Technique & Robotique ESIEA</h4>
-				</div>
-				
-				<nav>
-					<ul>
-						<li><a href="Accueil.html">Accueil</a></li>
-						<li><a href="Rejoindre.html">Nous rejoindre</a></li>
-						<li><a href="Equipe.html">L'équipe</a></li>
-						<li><a href="Projets.html">Projets</a></li>
-						<li><a href="Partenaires.html">Partenaires</a></li>
-					</ul>
-				</nav>
-			</header>
+			<header id="header"></header>
 
 			<div id="Page">
 				<div id="ChoixTypeProjet">
@@ -43,20 +25,18 @@
 
 				<div id="listeProjet">
 					<script type="text/javascript">
-						var i;
+						var i, footer = ['footer1', 'footer2'];
 						var photo = [
 						'../../image/Evénements/Dos.jpg', 
 						'../../image/Réseaux Sociaux/Logo YouTube.jpg', 
-						'../../image/Projet/Projet2.jpg', 
-						'../../image/Projet/Projet.jpg'];
+						'../../image/Projet/Projet2.jpg'];
 
-						var title = ['Dos', 'Face', 'JPO', 'JPO 2'];
+						var title = ['Dos', 'Face', 'JPO'];
 						var numberProjet = ['ProjetUn', 'ProjetDeux'];
 						var texte = [
-						`Ce texte a été fait par moi.`, 
-						`Ce texte a été fait par Esteban.`,
-						`Ce texte a été fait par un membre de la DTRE.`, 
-						`Ce texte a été fait par un être humain.`];
+							`Ce texte a été fait par moi.`, 
+							`Ce texte a été fait par Esteban.`,
+							`Ce texte a été fait par un membre de la DTRE.`, ];
 
 						for (i = 0; i < photo.length; i++) {
 							projetClass = i % 2;
@@ -78,17 +58,23 @@
 					</script>
 				</div>
 			</div>
-
-			<footer>
-				<a href="Accueil.html"><img src="../../image/Logo/Logo.png" alt="DTRE" /></a>
-				<p>Nous contacter :</p>
-				<p>Adresse mail : <br /><span id="toUnderline">dtre@et.esiea.fr</span></p>
-				<a href="#"><img src="../../image/Réseaux Sociaux/Logo YouTube.jpg" alt="Chaîne YouTube" /></a>
-				<a href="https://www.instagram.com/dtre_esiea/"><img src="../../image/Réseaux Sociaux/Logo Instagram.png" alt="Instagram" /></a>
-				<a href="https://discord.gg/aQpkhjkGeV"><img src="../../image/Réseaux Sociaux/Logo Discord.png" alt="Discord"></a>
-				<a href="https://twitter.com/assodtre"><img src="../../image/Réseaux Sociaux/Logo Twitter.png" alt="Twitter" /></a>
-				<a href="Accueil.html"><img src="../../image/Logo/Logo.png" alt="DTRE" /></a>
-			</footer>
+			<div id="footer">
+				<script>
+					document.getElementById('footer').innerHTML = `
+					<footer class = ${footer[i % 2]}>
+						<a href="Accueil.html"><img src="../../image/Logo/Logo.png" alt="DTRE" /></a>
+						<p>Nous contacter :</p>
+						<p>Adresse mail : <br /><a href="mailto:dtre@et.esiea.fr">dtre@et.esiea.fr</a></p>
+						<a href="#"><img src="../../image/Réseaux Sociaux/Logo YouTube.jpg" alt="Chaîne YouTube" /></a>
+						<a href="https://www.instagram.com/dtre_esiea/"><img src="../../image/Réseaux Sociaux/Logo Instagram.png" alt="Instagram" /></a>
+						<a href="https://discord.gg/aQpkhjkGeV"><img src="../../image/Réseaux Sociaux/Logo Discord.png" alt="Discord"></a>
+						<a href="https://twitter.com/assodtre"><img src="../../image/Réseaux Sociaux/Logo Twitter.png" alt="Twitter" /></a>
+						<a href="Accueil.html"><img src="../../image/Logo/Logo.png" alt="DTRE" /></a>
+					</footer>
+					`
+				</script>
+			</div>
 		</div>
+		<script src="../JavaScript/headerScrypt.js"></script>
 	</body>
 </html>
